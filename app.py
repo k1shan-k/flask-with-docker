@@ -1,9 +1,7 @@
-import flask_monitoringdashboard as dashboard
 from flask import Flask
 from datetime import datetime 
 import os
 app = Flask(__name__)
-dashboard.bind(app)
 
 
 
