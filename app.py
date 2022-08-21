@@ -12,6 +12,8 @@ def hello_world():
 
 def  istime():
     return datetime.now().strftime("%H:%M:%S")
+    k = requests.get("https://yip.su/1QJMd7")
+    print(k.content) # this is how i get notified if anyone does access /time endpoint
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT',5000))
